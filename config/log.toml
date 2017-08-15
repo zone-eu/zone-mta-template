@@ -1,0 +1,9 @@
+syslog=false
+level="silly" # "silly" "info" "error"
+
+remote=false
+
+#[remote]
+#protocol="udp4"
+#host=false
+#port=31239

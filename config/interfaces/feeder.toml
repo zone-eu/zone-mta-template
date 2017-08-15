@@ -1,0 +1,30 @@
+# Default SMTP interface for accepting mail for delivery
+
+[feeder]
+enabled=true
+
+# How many worker processes to spawn
+processes=1
+
+# Maximum allowed message size 30MB
+maxSize=31457280
+
+# Local IP and port to bind to
+host="127.0.0.1"
+port=2525
+
+# Set to true to require authentication
+# If authentication is enabled then you need to use a plugin with authentication hook
+authentication=false
+
+# How many recipients to allow per message
+maxRecipients=1000
+
+# set to true to enable STARTTLS
+starttls=true
+# set to true to start in TLS mode if using port 465
+secure=false
+
+# define keys for STARTTLS/TLS. These paths are relative to CWD
+key="./keys/example.com-key.pem"
+cert="./keys/example.com-cert.pem"

@@ -1,0 +1,3 @@
+
+# List local IP addresses that can be used for outbound tcp connections
+default=["0.0.0.0", "::"]

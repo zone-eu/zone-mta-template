@@ -1,0 +1,26 @@
+{
+    "name": "zone-mta-template",
+    "private": true,
+    "version": "1.0.0",
+    "description": "ZoneMTA example application",
+    "main": "index.js",
+    "scripts": {
+        "start": "node index.js --config=config/zonemta.toml"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/zone-eu/zone-mta-template.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/zone-eu/zone-mta-template/issues"
+    },
+    "homepage": "https://github.com/zone-eu/zone-mta-template#readme",
+    "dependencies": {
+        "zone-mta": "^1.1.0-beta.1",
+        "zonemta-delivery-counters": "^1.0.0",
+        "zonemta-loop-breaker": "^1.0.2"
+    }
+}

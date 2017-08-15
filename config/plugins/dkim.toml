@@ -1,0 +1,14 @@
+["core/dkim"]
+enabled="sender"
+
+# Domain name in the dkim signature. Leave blank to use the domain of From: address
+domain="example.com"
+
+# If true then uses the same key to add a signature for the hostname of the outbound IP address
+signTransportDomain=true
+
+# Selector value in the dkim signature
+selector="test"
+
+# Key location. Relative to working directory
+path="./keys/example.com-dkim.pem"
