@@ -8,9 +8,13 @@ This is a skeleton application to run ZoneMTA based MTA/MSA servers. Download it
 
 ## What is ZoneMTA?
 
-[ZoneMTA](https://github.com/zone-eu/zone-mta) is a modern open source MTA/MSA server. You can use it as a SMTP smarthost or a MSA host, it is fast and scalable, you can send many millions of emails a day with it. 
+[ZoneMTA](https://github.com/zone-eu/zone-mta) is a modern open source MTA/MSA server. You can use it as a SMTP smarthost or a MSA host, it is fast and scalable, you can send many millions of emails a day with it.
 
 ZoneMTA also comes with features usually available only for commercial SMTP servers like Virtual MTAs (or "sending zones" in ZoneMTA speak), IP pooling and rotation, IP warm-up, IP blacklist detection and mitigation, clustered setup with a shared queue and so on. ZoneMTA is battle tested with more than 100 million successful deliveries from a single server.
+
+## What it is not?
+
+ZoneMTA is not meant to deliver marketing emails. You can obviously do it but the intended use case is to cater the needs of an ISP, where a continous and neverending flow of messages are sent by its users. Marketing emails usually mean huge spikes where a large amount of messages are inserted to the sending queue at once. ZoneMTA should handle this at ease, even if it was built for something different.
 
 ## Requirements
 
