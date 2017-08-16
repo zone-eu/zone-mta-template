@@ -14,7 +14,7 @@ ZoneMTA also comes with features usually available only for commercial SMTP serv
 
 ## What it is not?
 
-ZoneMTA is not meant to deliver marketing emails. You can obviously do it but the intended use case is to cater the needs of an ISP, where a continous and neverending flow of messages are sent by its users. Marketing emails usually mean huge spikes where a large amount of messages are inserted to the sending queue at once. ZoneMTA should handle this at ease, even if it was built for something different.
+ZoneMTA is not meant to deliver marketing emails. You can obviously do it but the intended use case is to cater the needs of an ISP, where a continous and neverending flow of variously sized messages (from simple "thanks!" to 30MB PDF attachments) are sent by its users. Marketing emails usually mean huge spikes where a large amount of rather small messages are inserted to the sending queue at once. ZoneMTA should handle this at ease as well, even though it was built for something different.
 
 ## Requirements
 
