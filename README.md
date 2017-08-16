@@ -1,6 +1,6 @@
 # zone-mta-template
 
-Skeleton application for [ZoneMTA](https://github.com/zone-eu/zone-mta) SMTP ervers.
+Skeleton application for [ZoneMTA](https://github.com/zone-eu/zone-mta) based SMTP servers.
 
 ## What is this?
 
