@@ -1,4 +1,3 @@
 ["modules/zonemta-delivery-counters"]
 enabled="main"
-redis="redis://localhost:6379/2"
 prefix="zmta"

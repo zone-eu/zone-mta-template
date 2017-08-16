@@ -20,9 +20,11 @@ authentication=false
 # How many recipients to allow per message
 maxRecipients=1000
 
-# set to true to enable STARTTLS
+# Set to true to enable STARTTLS. Do not forget to change default TLS keys
 starttls=true
+
 # set to true to start in TLS mode if using port 465
+# this probably does not work as TLS support with 465 in ZoneMTA is a bit buggy
 secure=false
 
 # define keys for STARTTLS/TLS. These paths are relative to CWD
