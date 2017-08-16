@@ -26,6 +26,16 @@ $ node index.js --config=/etc/zonemta/zonemta.toml
 
 You can find an example systemd unit file from the [setup](./setup) folder.
 
+To see the current config run the following. This shows the fully merged config tree:
+
+```
+$ npm run config
+> { name: 'ZoneMTA',
+  ident: 'zone-mta',
+  dbs:
+   { mongo: ...
+```
+
 ## Adding plugins
 
 You can either add a plugin to the plugins folder and in that case the plugin config id would be the name of the plugin without extension.

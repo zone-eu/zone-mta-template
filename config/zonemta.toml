@@ -15,7 +15,7 @@ ident="zone-mta"
 
 [dbs]
 # MongoDB and Redis connection options
-# @include "dbs.toml"
+# @include "dbs-{env}.toml"
 
 [queue]
 # @include "queue.toml"

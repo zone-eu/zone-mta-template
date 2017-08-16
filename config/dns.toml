@@ -9,5 +9,5 @@ nameservers=[]
 
 blockDomains=[]
 
-# If true then messages to local network are blocked
+# If true then messages to local interfaces are blocked
 blockLocalAddresses=false
