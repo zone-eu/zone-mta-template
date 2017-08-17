@@ -68,8 +68,8 @@ Here's an example of visualizing ZoneMTA data in Grafana:
 
 Metrics used in this chart:
 
-* `rate(zonemta_message_push[1m])`
-* `rate(zonemta_delivery_status{status="delivered"}[1m])`
+* `rate(zonemta_message_push[1m])` + `rate(zonemta_message_drop[1m])`
+* `rate(zonemta_delivery_status{status="delivered"}[1m])` + `rate(zonemta_delivery_status{status="deferred"}[1m])` + `rate(zonemta_delivery_status{status="rejected"}[1m])`
 * `zonemta_queue_size{type="deferred"}`
 * `zonemta_blacklisted`
 * `increase (zonemta_delivery_status{status="delivered"}[1h])`
