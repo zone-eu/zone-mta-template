@@ -58,16 +58,18 @@ $ npm run config
    { mongo: ...
 ```
 
-## Adding plugins
+## Monitoring
 
-You can either add a plugin to the plugins folder and in that case the plugin config id would be the name of the plugin without extension.
+ZoneMTA exposes monitoring data for Prometheus from http://localhost:12080/metrics
 
-Alternatively you could install an existing plugin from npm:
+Here's an example of visualizing ZoneMTA data in Grafana:
 
-```
-npm install zonemta-some-plugin --save
-```
+![](https://cldup.com/3xgBRHEIZU.png)
 
-In that case the plugin configuration id would be `["modules/zonemta-some-plugin"]`
+Metrics used in this chart:
 
-Store plugin configuration files to [config/plugins](./config/plugins) and browse existing ones for example.
+* `rate(zonemta_message_push[1m])`
+* `rate(zonemta_delivery_status{status="delivered"}[1m])`
+* `zonemta_queue_size{type="deferred"}`
+* `zonemta_blacklisted`
+* `increase (zonemta_delivery_status{status="delivered"}[1h])`
