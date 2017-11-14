@@ -20,7 +20,7 @@
     },
     "homepage": "https://github.com/zone-eu/zone-mta-template#readme",
     "dependencies": {
-        "zone-mta": "git://github.com/zone-eu/zone-mta.git#93ea600d09378fe47fd90fe51155a550d0c033c7",
+        "zone-mta": "git://github.com/zone-eu/zone-mta.git#365780657c7e82b24454ae0659960e8c5117b37d",
         "zonemta-delivery-counters": "1.0.1",
         "zonemta-loop-breaker": "1.0.2"
     }
