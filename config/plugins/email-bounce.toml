@@ -6,3 +6,8 @@ sendingZone="bounces"
 # From: header for bounce emails
 name="Mail Delivery Subsystem"
 address="mailer-daemon@[HOSTNAME]"
+
+# configure zone specific bounce options for zone "myzone"
+["core/email-bounce".zoneConfig.myzone]
+disabled=true # if true then skip this block, revert to default
+sendingZone="default" # use a specific zone
