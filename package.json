@@ -22,6 +22,7 @@
     "dependencies": {
         "zone-mta": "1.5.0",
         "zonemta-delivery-counters": "1.0.1",
-        "zonemta-loop-breaker": "1.0.2"
+        "zonemta-loop-breaker": "1.0.2",
+        "zonemta-wildduck": "^1.8.0"
     }
 }
