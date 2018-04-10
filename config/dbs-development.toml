@@ -1,7 +1,7 @@
 # Database configuration
 
 # MongoDB connection string
-mongo="mongodb://127.0.0.1:27017/zone-mta"
+mongo="mongodb://127.0.0.1:27017/wildduck"
 
 # Redis connection string
 redis="redis://localhost:6379/2"

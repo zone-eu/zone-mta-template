@@ -15,7 +15,7 @@ port=2525
 
 # Set to true to require authentication
 # If authentication is enabled then you need to use a plugin with authentication hook
-authentication=false
+authentication=true
 
 # How many recipients to allow per message
 maxRecipients=1000
@@ -28,5 +28,8 @@ starttls=true
 secure=false
 
 # define keys for STARTTLS/TLS. These paths are relative to CWD
-key="./keys/example.com-key.pem"
-cert="./keys/example.com-cert.pem"
+#key="./keys/example.com-key.pem"
+#cert="./keys/example.com-cert.pem"
+
+key="/usr/local/etc/nginx/privkey.pem"
+cert="/usr/local/etc/nginx/fullchain.pem"

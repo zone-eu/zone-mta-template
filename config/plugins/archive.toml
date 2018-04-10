@@ -1,0 +1,43 @@
+# plugins/archive.toml
+["zonemta-archive"]
+enabled=["receiver", "sender"]
+
+# to which SMTP interfaces this plugin applies to. Use "*" for all interfaces
+interfaces=["feeder"]
+
+# optional hostname to be used in headers
+# defaults to os.hostname()
+hostname="example.com"
+
+# How long to keep auth records in log
+authlogExpireDays=30
+
+# archive specific database name or connection string
+db="archive"
+
+# SRS settings for forwarded emails
+# ---------------------------------
+
+["zonemta-archive".srs]
+    # Handle rewriting of forwarded emails. If false then SRS is not used
+    # Only affect messages that have interface set to "forwarder"
+    enabled=true
+
+    # SRS secret value. Must be the same as in the MX side
+    secret="secret value"
+
+    # SRS domain, must resolve back to MX
+    rewriteDomain="example.com"
+
+# DKIM Settings
+# -------------
+
+["zonemta-archive".dkim]
+    # If true then also adds a signature for the outbound domain
+    signTransportDomain=false
+
+    # If set then decrypt encrypted DKIM keys using this password
+    #secret="a secret cat"
+
+    # Cipher to use to decrypt encrypted DKIM keys
+    #cipher="aes192"
