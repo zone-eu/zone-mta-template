@@ -1,9 +1,10 @@
 syslog=false
 level="silly" # "silly" "info" "error"
 
-remote=false
+#remote=false
 
-#[remote]
-#protocol="udp4"
-#host=false
-#port=31239
+[remote]
+# make sure you have ZMTA Webadmin listening on this port
+protocol="udp4"
+host="127.0.0.1"
+port=31239

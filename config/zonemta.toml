@@ -23,6 +23,9 @@ ident="zone-mta"
 [dns]
 # @include "dns.toml"
 
+[api]
+port=12080
+
 [smtpInterfaces]
 # @include "interfaces/*.toml"
 
