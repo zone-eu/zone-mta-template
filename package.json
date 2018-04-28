@@ -1,7 +1,7 @@
 {
     "name": "zone-mta-template",
     "private": true,
-    "version": "1.0.3",
+    "version": "1.0.4",
     "description": "ZoneMTA example application",
     "main": "index.js",
     "scripts": {
@@ -20,7 +20,7 @@
     },
     "homepage": "https://github.com/zone-eu/zone-mta-template#readme",
     "dependencies": {
-        "zone-mta": "1.7.2",
+        "zone-mta": "1.7.3",
         "zonemta-delivery-counters": "1.0.1",
         "zonemta-loop-breaker": "1.0.2"
     }
