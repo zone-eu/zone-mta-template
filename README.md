@@ -20,9 +20,10 @@ It is also not meant to deliver marketing emails. You can obviously do it but th
 
 ## Requirements
 
-* **Node.js**
-* **MongoDB**
-* **Redis**
+*   **Node.js**
+*   **MongoDB**
+*   **Redis**
+*   **Avast** (optional) virus scanner ([get it here](https://www.avast.com/linux-server-antivirus))
 
 ## Usage
 
@@ -36,6 +37,10 @@ $ npm start
 ```
 
 If everything succeeds then you should have a SMTP relay with no authentication running on localhost port 2525 (does not accept remote connections).
+
+### Virus scanning
+
+If you want to use Avast for scanning messages for viruses, then install Avast Core Security to the same machine you are running ZoneMTA from and then enable the [virus scanner plugin](config/plugins/avast.toml) which is disabled by default.
 
 ## Configuration
 
@@ -68,16 +73,15 @@ Here's an example of visualizing ZoneMTA data in Grafana:
 
 Metrics used in this chart:
 
-* Received messages rate
-  * `rate(zonemta_message_push[1m])`
-  * `rate(zonemta_message_drop[1m])`
-* Sent messages rate
-  * `rate(zonemta_delivery_status{status="delivered"}[1m])`
-  * `rate(zonemta_delivery_status{status="deferred"}[1m])`
-  * `rate(zonemta_delivery_status{status="rejected"}[1m])`
-* Queue size
-  * `zonemta_queue_size{type="deferred"}`
-  * `zonemta_queue_size{type="queued"}`
-* Blacklisting `zonemta_blacklisted`
-* Delivered in 1h `increase (zonemta_delivery_status{status="delivered"}[1h])`
-
+*   Received messages rate
+    *   `rate(zonemta_message_push[1m])`
+    *   `rate(zonemta_message_drop[1m])`
+*   Sent messages rate
+    *   `rate(zonemta_delivery_status{status="delivered"}[1m])`
+    *   `rate(zonemta_delivery_status{status="deferred"}[1m])`
+    *   `rate(zonemta_delivery_status{status="rejected"}[1m])`
+*   Queue size
+    *   `zonemta_queue_size{type="deferred"}`
+    *   `zonemta_queue_size{type="queued"}`
+*   Blacklisting `zonemta_blacklisted`
+*   Delivered in 1h `increase (zonemta_delivery_status{status="delivered"}[1h])`
