@@ -42,6 +42,10 @@ If everything succeeds then you should have a SMTP relay with no authentication 
 
 If you want to use Avast for scanning messages for viruses, then install Avast Core Security to the same machine you are running ZoneMTA from and then enable the [virus scanner plugin](config/plugins/avast.toml) which is disabled by default.
 
+### Authentication
+
+The default SMTP interface called "feeder" has authentication enabled with default username as "user" and password as "secret". Authentication can be enabled disabled with the [authentication switch](https://github.com/zone-eu/zone-mta-template/blob/e5593cb990b910695335ec0d669de123aaab8062/config/interfaces/feeder.toml#L18). If authentication is enabled then username and password can be validated with a plugin. There's an [example authentication plugin](./plugins/example-auth.js) that can be used to create custom auth logic.
+
 ## Configuration
 
 All configuration files reside in the [config](.config) directory. If you want to move that directory to somewhere else then you can do that, though you would have to provide the new location as a command line argument.

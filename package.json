@@ -1,7 +1,7 @@
 {
     "name": "zone-mta-template",
     "private": true,
-    "version": "1.1.0",
+    "version": "1.2.0",
     "description": "ZoneMTA example application",
     "main": "index.js",
     "scripts": {
@@ -13,14 +13,14 @@
         "url": "git+https://github.com/zone-eu/zone-mta-template.git"
     },
     "keywords": [],
-    "author": "",
-    "license": "ISC",
+    "author": "Andris Reinman",
+    "license": "EUPL-1.1+",
     "bugs": {
         "url": "https://github.com/zone-eu/zone-mta-template/issues"
     },
     "homepage": "https://github.com/zone-eu/zone-mta-template#readme",
     "dependencies": {
-        "zone-mta": "1.8.3",
+        "zone-mta": "1.8.4",
         "zonemta-avast": "1.0.0",
         "zonemta-delivery-counters": "1.0.1",
         "zonemta-loop-breaker": "1.0.2"
