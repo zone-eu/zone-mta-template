@@ -14,7 +14,7 @@ host="127.0.0.1"
 port=2525
 
 # Set to true to require authentication
-# If authentication is enabled then you need to use a plugin with authentication hook
+# If authentication is enabled then you need to use a plugin with an authentication hook
 authentication=true
 
 # How many recipients to allow per message
