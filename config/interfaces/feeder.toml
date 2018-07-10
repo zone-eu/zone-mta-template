@@ -31,5 +31,5 @@ secure=false
 #key="./keys/example.com-key.pem"
 #cert="./keys/example.com-cert.pem"
 
-key="/usr/local/etc/nginx/privkey.pem"
-cert="/usr/local/etc/nginx/fullchain.pem"
+#key="/usr/local/etc/nginx/privkey.pem"
+#cert="/usr/local/etc/nginx/fullchain.pem"
