@@ -1,6 +1,6 @@
 # If true then caches DNS results to Redis
 caching=true
-cahceTTL=600 # TTL of cached dns keys in seconds
+cacheTTL=600 # TTL of cached dns keys in seconds
 
 # Define nameservers to use (IP addresses only). If using a local DNS cache server, then set caching=false
 nameservers=[]
