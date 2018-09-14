@@ -2,6 +2,9 @@
 enabled="main"
 sendingZone="bounces"
 
+# email bounces are not generated for messages from the following interfaces
+disableInterfaces=["forwarder"]
+
 ["core/email-bounce".mailerDaemon]
 # From: header for bounce emails
 name="Mail Delivery Subsystem"
