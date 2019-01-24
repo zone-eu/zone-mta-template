@@ -20,7 +20,7 @@
     },
     "homepage": "https://github.com/zone-eu/zone-mta-template#readme",
     "dependencies": {
-        "zone-mta": "1.15.0",
+        "zone-mta": "1.15.1",
         "zonemta-avast": "1.0.0",
         "zonemta-delivery-counters": "1.0.1",
         "zonemta-limiter": "1.0.0",
