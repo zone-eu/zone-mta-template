@@ -28,8 +28,6 @@ starttls=true
 secure=false
 
 # define keys for STARTTLS/TLS. These paths are relative to CWD
+# NB! Keys must be accessible by process user or SMTP authentication will fail.
 #key="./keys/example.com-key.pem"
 #cert="./keys/example.com-cert.pem"
-
-#key="/usr/local/etc/nginx/privkey.pem"
-#cert="/usr/local/etc/nginx/fullchain.pem"
