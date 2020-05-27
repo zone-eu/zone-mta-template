@@ -6,7 +6,7 @@ const username = 'user';
 const password = 'secret';
 
 module.exports.title = 'Example Authentication';
-module.exports.init = function(app, done) {
+module.exports.init = (app, done) => {
     // Listen for AUTH command
     app.addHook('smtp:auth', (auth, session, next) => {
         if (!app.config.interfaces.includes(session.interface)) {
