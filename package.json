@@ -20,14 +20,14 @@
     },
     "homepage": "https://github.com/zone-eu/zone-mta-template#readme",
     "dependencies": {
-        "zone-mta": "2.3.0",
+        "zone-mta": "2.3.1",
         "zonemta-avast": "1.0.0",
         "zonemta-delivery-counters": "1.0.1",
         "zonemta-limiter": "1.0.0",
         "zonemta-loop-breaker": "1.0.2"
     },
     "devDependencies": {
-        "eslint": "7.3.1",
+        "eslint": "7.9.0",
         "eslint-config-nodemailer": "1.2.0",
         "eslint-config-prettier": "6.11.0"
     }
