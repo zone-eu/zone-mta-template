@@ -7,7 +7,7 @@ enabled=true
 processes=1
 
 # Maximum allowed message size 30MB
-maxSize=31457280
+maxSize=20971520
 
 # Local IP and port to bind to
 host="127.0.0.1"
@@ -15,7 +15,7 @@ port=2525
 
 # Set to true to require authentication
 # If authentication is enabled then you need to use a plugin with an authentication hook
-authentication=true
+authentication=false
 
 # How many recipients to allow per message
 maxRecipients=1000
