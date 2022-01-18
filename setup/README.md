@@ -2,7 +2,7 @@
 
 In this folder you can find an example systemd service file.
 
-The service assumes that application files are stored in /opt/zonemta and config directory resides in /etc/zonemta
+The service assumes that application files are stored in /opt/zone-mta and config directory resides in /etc/zonemta
 
 **NB!** when running as systemd service, do not forget to edit user info in config
 
