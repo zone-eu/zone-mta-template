@@ -92,5 +92,3 @@ Metrics used in this chart:
 *   Blacklisting `zonemta_blacklisted`
 *   Delivered in 1h `increase (zonemta_delivery_status{status="delivered"}[1h])`
 
-
-
