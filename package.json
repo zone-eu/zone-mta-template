@@ -20,7 +20,7 @@
     },
     "homepage": "https://github.com/zone-eu/zone-mta-template#readme",
     "dependencies": {
-        "zone-mta": "3.6.1",
+        "zone-mta": "3.6.4",
         "zonemta-avast": "1.0.0",
         "zonemta-delivery-counters": "1.0.1",
         "zonemta-limiter": "1.0.0",
@@ -29,6 +29,6 @@
     "devDependencies": {
         "eslint": "8.35.0",
         "eslint-config-nodemailer": "1.2.0",
-        "eslint-config-prettier": "8.6.0"
+        "eslint-config-prettier": "8.7.0"
     }
 }
