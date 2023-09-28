@@ -50,7 +50,7 @@ The default SMTP interface called "feeder" has authentication enabled with defau
 
 ## Configuration
 
-All configuration files reside in the [config](.config) directory. If you want to move that directory to somewhere else then you can do that, though you would have to provide the new location as a command line argument.
+All configuration files reside in the [config](./config) directory. If you want to move that directory to somewhere else then you can do that, though you would have to provide the new location as a command line argument.
 
 ```
 $ mv config /etc/zonemta
