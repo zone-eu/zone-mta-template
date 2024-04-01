@@ -6,7 +6,8 @@
     "main": "index.js",
     "scripts": {
         "start": "node index.js --config=config/zonemta.toml",
-        "config": "NODE_CONFIG_ONLY=true npm start"
+        "config": "NODE_CONFIG_ONLY=true npm start",
+        "update": "rm -rf node_modules package-lock.json && ncu -u && npm install"
     },
     "repository": {
         "type": "git",
@@ -20,14 +21,14 @@
     },
     "homepage": "https://github.com/zone-eu/zone-mta-template#readme",
     "dependencies": {
-        "zone-mta": "3.9.4",
+        "zone-mta": "3.9.5",
         "zonemta-avast": "1.0.0",
         "zonemta-delivery-counters": "1.0.1",
         "zonemta-limiter": "1.0.0",
         "zonemta-loop-breaker": "1.0.2"
     },
     "devDependencies": {
-        "eslint": "8.56.0",
+        "eslint": "8.57.0",
         "eslint-config-nodemailer": "1.2.0",
         "eslint-config-prettier": "9.1.0"
     }
