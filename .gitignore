@@ -8,3 +8,5 @@ config/production.*
 config/development.*
 *v8.log
 .npmrc
+config/plugins/development.*
+config/interfaces/development.*
