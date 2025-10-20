@@ -1,4 +1,4 @@
 'use strict';
 
 // start the app
-require('zone-mta');
+require('@zone-eu/zone-mta');
