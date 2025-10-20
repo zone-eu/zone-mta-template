@@ -1,5 +1,5 @@
 {
-    "name": "zone-mta-template",
+    "name": "@zone-eu/zone-mta-template",
     "private": true,
     "version": "1.8.0",
     "description": "ZoneMTA example application",
@@ -21,7 +21,7 @@
     },
     "homepage": "https://github.com/zone-eu/zone-mta-template#readme",
     "dependencies": {
-        "zone-mta": "3.10.2",
+        "@zone-eu/zone-mta": "3.10.4",
         "zonemta-avast": "1.0.0",
         "zonemta-delivery-counters": "1.0.1",
         "zonemta-limiter": "1.0.0",
@@ -30,6 +30,6 @@
     "devDependencies": {
         "eslint": "8.57.0",
         "eslint-config-nodemailer": "1.2.0",
-        "eslint-config-prettier": "9.1.0"
+        "eslint-config-prettier": "10.1.8"
     }
 }
