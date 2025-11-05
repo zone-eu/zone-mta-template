@@ -1,9 +1,12 @@
 # This is the main config file
 
-name="ZoneMTA"
+name = "ZoneMTA"
 
 # Process identifier
-ident="zone-mta"
+ident = "zone-mta"
+
+# relative to the root of zone-mta-template
+corePluginsPath = "./node_modules/@zone-eu/zone-mta/plugins/"
 
 # Run as the following user. Only use this if the application starts up as root
 #user="zonemta"
@@ -24,7 +27,7 @@ ident="zone-mta"
 # @include "dns.toml"
 
 [api]
-port=12080
+port = 12080
 
 [smtpInterfaces]
 # @include "interfaces/*.toml"
