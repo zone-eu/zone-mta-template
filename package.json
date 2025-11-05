@@ -21,7 +21,8 @@
     },
     "homepage": "https://github.com/zone-eu/zone-mta-template#readme",
     "dependencies": {
-        "@zone-eu/zone-mta": "3.10.4",
+        "@zone-eu/zone-mta": "3.10.7",
+        "@zone-eu/zonemta-wildduck": "1.32.23",
         "zonemta-avast": "1.0.0",
         "zonemta-delivery-counters": "1.0.1",
         "zonemta-limiter": "1.0.0",

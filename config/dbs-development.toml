@@ -1,6 +1,6 @@
 # Database configuration
 
-mongo = "mongodb://127.0.0.1:27117/wildduck"
+mongo = "mongodb://127.0.0.1:27017/wildduck"
 gridfs = "attachments"
 users = "users"
 sender = "zonemta"
