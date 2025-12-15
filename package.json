@@ -1,7 +1,7 @@
 {
     "name": "@zone-eu/zone-mta-template",
     "private": true,
-    "version": "1.11.0",
+    "version": "1.11.1",
     "description": "ZoneMTA example application",
     "main": "index.js",
     "scripts": {
