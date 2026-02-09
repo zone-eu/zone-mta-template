@@ -1,7 +1,7 @@
 {
     "name": "@zone-eu/zone-mta-template",
     "private": true,
-    "version": "1.11.1",
+    "version": "1.11.2",
     "description": "ZoneMTA example application",
     "main": "index.js",
     "scripts": {
@@ -21,7 +21,7 @@
     },
     "homepage": "https://github.com/zone-eu/zone-mta-template#readme",
     "dependencies": {
-        "@zone-eu/zone-mta": "3.10.11",
+        "@zone-eu/zone-mta": "3.10.12",
         "zonemta-avast": "1.0.0",
         "zonemta-delivery-counters": "1.0.1",
         "zonemta-limiter": "1.0.0",
